@@ -4,7 +4,6 @@ import { GlobalContext } from "../../context/Provider";
 
 const ContactsContainer = () => {
   const context = useContext(GlobalContext);
-  console.log(context);
   return (
     <div>
       <Header />

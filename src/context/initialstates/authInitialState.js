@@ -1,7 +1,8 @@
 const auth = {
   auth: {
     loading: false,
-    user: null
+    error: null,
+    data: null
   }
 };
 

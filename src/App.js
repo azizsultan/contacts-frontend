@@ -16,7 +16,6 @@ import ContactsRegister from "./containers/contactsRegister";
 import { GlobalProvider } from "./context/Provider";
 
 const App = () => {
-  console.log(routes);
   return (
     <GlobalProvider>
       <Router>

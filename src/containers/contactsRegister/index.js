@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../components/header";
+import RegisterUI from "../../layout/Register";
 
 const ContactsRegisterContainer = () => {
   return (
     <div>
-      <Header />
       <h1>Contacts Register</h1>
     </div>
   );
