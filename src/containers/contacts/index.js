@@ -1,9 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "../../components/header";
 import { GlobalContext } from "../../context/Provider";
+import getContacts from "../../context/actions/contacts/getContacts";
 
 const ContactsContainer = () => {
   const context = useContext(GlobalContext);
+
+  useEffect(() => {
+    getContacts();
+  }, []);
   return (
     <div>
       <Header />

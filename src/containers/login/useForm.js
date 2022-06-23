@@ -15,15 +15,6 @@ const useForm = () => {
     }
   } = useContext(GlobalContext);
 
-  // useEffect(() => {
-  //   if (error) {
-  //     for (const item in error) {
-  //       console.log(error[item][0]);
-  //       setFieldErrors({ ...fieldErrors, [item]: error[item][0] });
-  //     }
-  //   }
-  // }, [error]);
-
   const onChange = (e, { name, value }) => {
     setForm({ ...form, [name]: value });
   };
@@ -31,7 +22,6 @@ const useForm = () => {
   const loginFormValid = !form.username?.length || !form.password?.length;
 
   const onSubmit = () => {
-    //register(form)(authDispatch);
     login(form)(authDispatch);
   };
 
